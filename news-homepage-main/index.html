@@ -17,7 +17,7 @@
 
  <!-- Navbar hamburger Menu -->
 
-    <header class="container-fluid">
+    <header class="container">
       <nav class="navbar">
         <div class="brand-logo">
           <img src="logo.svg" alt="Sites Logo">
@@ -42,78 +42,81 @@
 
     <!-- Main Content -->
 
-    <main class="container">
-      <article>
-        <div class="row image-header-section article-section">
-            <img class="col img-fluid main-header-img" src="assets/images/image-web-3-desktop.jpg" alt="multiple blocks and shapes in various colors">
-            <div class="row sub-sections pe-0">
-              <div class="col pt-5">
-                <h1>The Bright Future of Web 3.0?</h1>
-              </div>
-              <div class="col pt-5">
-                <p class="main-question">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-                <button type="button">READ MORE</button>
-              </div>
-            </div>
+    <main class="container grid-sections">
+
+      <article class="header-img-section">
+        <img class="img-fluid" src="assets/images/image-web-3-desktop.jpg" alt="">
+      </article>
+
+      <article class="main-title-section grid-item">
+        <div class="">
+          <h1>The Bright Future of Web 3.0?</h1>
         </div>
-        
-        <div class="row new-articles-section article-section">
-          <h2>New</h2>
-          <div class="col text-card">
+      </article>
+
+      <article class="sub-title-section grid-item">
+        <div>
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button type="button">READ MORE</button>
+        </div>
+      </article>
+
+      <article class="news-section grid-item">
+        <div class="news-articles">
+          <div class="text-card">
+            <h2>New</h2>
             <h4>The Downside of AI Artistry</h4>
             <p class="sub-text">What are the possible adverse effects of on-demand AI image generation?</p>
           </div>
-          <div class="col text-card">
+          <div class="text-card">
             <h4>The Downside of AI Artistry</h4>
             <p class="sub-text">What are the possible adverse effects of on-demand AI image generation?</p>
           </div>
-          <div class="col text-card">
+          <div class="text-card">
             <h4>Is VC Funding Drying Up?</h4>
             <p class="sub-text">Private funding by VC firms down 50% YOY. We take a look at what that means.</p>
           </div>
         </div>
-        
       </article>
 
-      <div class="container related-articles-section">
-        <div class="row article-card">
-          <div class="col-lg-2">
-            <img class="img-fluid" src="image-retro-pcs.jpg" alt="">
-          </div>
-          <div class="col-lg-2">
-            <h5>01</h5>
-            <p>Reviving Retro PCs</p>
-            <p>What happens when old PCs are given modern upgrades</p>  
-          </div>
-
-          <div class="row article-card">
-            <div class="col-lg-2">
-              <img class="img-fluid" src="image-retro-pcs.jpg" alt="">
-            </div>
-            <div class="col-lg-2">
+      <article class="grid-item">
+        <div class="article-card">
+            <img class="sub-img img-fluid" src="assets/images/image-retro-pcs.jpg" alt="">
+            <div>
               <h5>01</h5>
               <p>Reviving Retro PCs</p>
-              <p>What happens when old PCs are given modern upgrades</p>  
+              <p>What happens when old PCs are given modern upgrades</p>
             </div>
-
-            <div class="row article-card">
-              <div class="col-lg-2">
-                <img class="img-fluid" src="image-retro-pcs.jpg" alt="">
-              </div>
-              <div class="col-lg-2">
-                <h5>01</h5>
-                <p>Reviving Retro PCs</p>
-                <p>What happens when old PCs are given modern upgrades</p>  
-              </div>
-
         </div>
-      </div>
+      </article>
+
+      <article class="grid-item">
+        <div class="article-card">
+            <img class="sub-img img-fluid" src="assets/images/image-top-laptops.jpg" alt="">
+            <div>
+              <h5>01</h5>
+              <p>Reviving Retro PCs</p>
+              <p>What happens when old PCs are given modern upgrades</p>
+            </div>
+        </div>
+      </article>
+      
+      <article class="grid-item">
+        <div class="article-card card-three">
+            <img class="sub-img img-fluid" src="assets/images/image-gaming-growth.jpg" alt="">
+            <div>
+              <h5>01</h5>
+              <p>Reviving Retro PCs</p>
+              <p>What happens when old PCs are given modern upgrades</p>
+            </div>
+        </div>
+      </article>
     </main>
   
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Brandon Obeso</a>.
-  </div> -->
+  </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
