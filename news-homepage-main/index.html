@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -17,49 +19,58 @@
 
  <!-- Navbar hamburger Menu -->
 
-    <header class="container">
-      <nav class="navbar">
-        <div class="brand-logo">
-          <img src="assets/images/logo.svg" alt="Sites Logo">
-        </div>
 
-        <a class="toggle-button"  id="hamburger" href="#">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
+ <nav class="container navbar navbar-expand-lg pb-5 pt-5">
+  <div class="container">
+    <div class="brand-logo">
+      <img class="logo img-fluid" src="assets/images/logo.svg" alt="Sites Logo">
+    </div>
+    <button class="navbar-toggler hamburger-bg mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon bars"></span>
+    </button>
+    <div class="offcanvas offcanvas-end offcanvas-bg slider-menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header close-button">
+        <button type="button" class="btn-close x-button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-0">
+          <li class="nav-item">
+            <a class="nav-link links" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links" href="#">New</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links" href="#">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links" href="#">Categories</a>
+          </li>
 
-        <div class="navbar-links">
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a class="links" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="links" href="#">New</a>
-            </li>
-            <li class="nav-item">
-              <a class="links" href="#">Popular</a>
-            </li>
-            <li class="nav-item">
-              <a class="links" href="#">Trending</a>
-            </li>
-            <li class="nav-item">
-              <a class="links" href="#">Categories</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+        </ul>
+    
+      </div>
+    </div>
+  </div>
+</nav>
+   
     <!-- Main Content -->
 
     <main class="container grid-sections">
 
       <article class="header-img-section">
-        <img class="main-img" src="assets/images/image-web-3-desktop.jpg" alt="">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/image-web-3-mobile.jpg">
+          <source media="(min-width: 1440px)" srcset="assets/images/image-web-3-desktop.jpg">
+          <img class="main-img" src="assets/images/image-web-3-desktop.jpg" alt="">
+        </picture>
       </article>
 
       <article class="main-title-section grid-item">
-        <div class="">
+        <div>
           <h1 class="display-1">The Bright Future of Web 3.0?</h1>
         </div>
       </article>
@@ -138,6 +149,8 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="project.js"></script>
 </body>
 </html>

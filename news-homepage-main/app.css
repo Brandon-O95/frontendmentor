@@ -20,8 +20,8 @@ h2 {
   color: hsl(35, 77%, 62%);
   align-self: flex-start; 
   font-weight: 600;
-  padding: 2rem 0 0 0;
-  font-size: 40px;
+  padding: 1rem 0 0 0;
+  font-size: 35px;
   margin-bottom: 10px;
 }
 
@@ -51,7 +51,7 @@ button {
   background-color: hsl(5, 85%, 63%);
   border: none;
   color: white;
-  padding: 15px 30px 15px 30px;
+  padding: 10px 30px 10px 30px;
   letter-spacing: 5px;
   margin: 40px 0 0 0;
   position: absolute;
@@ -66,19 +66,11 @@ button:hover {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1.2rem;
-  padding-bottom: 3rem;
-}
-
-a.links {
+.links {
   text-decoration: none;
   color: hsl(236, 13%, 42%);
   font-size: 18px;
-  padding: 0 45px;
+  padding: 0 44px !important;
   transition: color 100ms;
 }
 
@@ -88,36 +80,20 @@ a.links {
 
 
 .links:last-child {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
-  margin: 0;
+nav {
+  background-color: hsl(36, 100%, 99%);
 }
 
-.manu {
-  display: none;
+.hamburger-bg {
+  background-color: transparent !important;
 }
 
-.toggle-button  {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 45px;
-  height: 25px;
-}
-
-.bar {
-  height: 4px;
-  width: 100%;
-  background-color: rgb(0, 0, 0);
+.hamburger-bg:focus {
+  border: none !important;
+  background-color: transparent !important;
 }
 
 /* main content */
@@ -161,8 +137,8 @@ main {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-img {
@@ -197,7 +173,7 @@ main {
 .sub-text {
   color: hsl(233, 8%, 79%);
   margin-top: 10px;
-  line-height: 35px;
+  line-height: 25px;
   font-size: 18px;
 }
 
@@ -223,7 +199,7 @@ main {
 
 .card-text {
   color: hsl(236, 13%, 42%);
-  font-size: 17px;
+  font-size: 17.8px;
 }
 
 .card-info {
@@ -270,6 +246,14 @@ main {
     font-weight: 800 !important;
   }
 
+  h4{
+    font-size: 21px;
+  }
+
+  h2 {
+    font-size: 35px !important;
+  }
+
   .article-card {
     display: flex;
     align-items: center;
@@ -301,7 +285,7 @@ main {
   }
 
   .sub-text {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .main-text {
@@ -341,7 +325,152 @@ main {
   }
 
   .card-text {
-    font-size: 13px;
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 55px;
+    padding-left: 5px;
+  }
+
+  .close-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .x-button {
+    font-size: 40px;
+    margin-top: 10px !important;
+    color: black !important;
+  }
+  
+  .offcanvas-body {
+    padding-top: 80px;
+    background-color: hsl(36, 100%, 99%) !important;
+  }
+  
+  .offcanvas-header {
+    background-color: hsl(36, 100%, 99%) !important;
+  }
+  
+  .links {
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 20px;
+    padding-bottom: 20px !important;
+    transition: color 0.3s;
+  }
+  
+  .links:hover {
+    color: hsl(35, 77%, 62%);
+  }
+
+  .hamburger-bg {
+    border: none;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-menu {
+    padding: 10px;
+  }
+
+  .hamburger-bg {
+    position: absolute;
+    right: 0;
+    top: -16px;
+    border: none;
+    padding-right: 10px;
+  }
+
+  nav {
+    padding-bottom: 0 !important;
+  }
+
+  .slider-menu {
+    width: 60% !important;
+  }
+
+  .links {
+    color: hsl(236, 13%, 42%);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 20px !important;
+    padding-left: 0 !important;
+    transition: color 0.3s;
+  }
+  
+  .links:hover {
+    color: hsl(35, 77%, 62%);
+  }
+
+  button.x-button {
+    position: absolute;
+    right: 50px;
+    font-size: 30px;
+    margin-top: 10px !important;
+    background-color: transparent;
+  }
+
+  .offcanvas-body {
+    padding-top: 90px !important;
+  }
+}
+
+@media (max-width:375px) {
+  
+  h1 {
+    font-size: 41px !important;
+  }
+
+  nav {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  .hamburger-bg {
+    background-color: transparent !important;
+  }
+  
+  .slider-menu {
+    width: 70% !important;
+  }
+
+  .links {
+    color: hsl(236, 13%, 42%);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 20px !important;
+    padding-left: 0 !important;
+    transition: color 0.3s;
+  }
+  
+  .links:hover {
+    color: hsl(35, 77%, 62%);
+  }
+
+  button.x-button {
+    position: fixed;
+    font-size: 30px;
+    margin-top: 10px !important;
+    background-color: transparent;
+  }
+
+  .offcanvas-body {
+    padding-top: 90px !important;
+  }
+
+  .main-text {
+    font-size: 15px;
+  }
+
+  .card-text {
+    font-size: 14px;
   }
 }
 
