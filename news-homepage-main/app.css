@@ -9,6 +9,10 @@ body, html {
   background-color: hsl(36, 100%, 99%);
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-weight: 800 !important;
   font-size: 64px !important;
@@ -52,11 +56,12 @@ button {
   border: none;
   color: white;
   padding: 10px 30px 10px 30px;
-  letter-spacing: 5px;
-  margin: 40px 0 0 0;
+  letter-spacing: 3px;
+  margin: 50px 0 0 0;
   position: absolute;
   transform: translateY(20px);
   transition: background-color 0.3ms;
+  font-size: 16px;
 }
 
 button:hover {
@@ -437,7 +442,7 @@ main {
   }
   
   .slider-menu {
-    width: 70% !important;
+    width: 80% !important;
   }
 
   .links {
@@ -471,6 +476,12 @@ main {
 
   .card-text {
     font-size: 14px;
+  }
+}
+
+@media (max-width:1399px) {
+  button {
+    margin-top: 22px;
   }
 }
 
